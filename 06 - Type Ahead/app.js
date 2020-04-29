@@ -2,4 +2,4 @@ const cities = [];
 
 fetch(enpoint)
     .then((blob) => blob.json())
-    .then((data) => (cities = data));
+    .then((data) => cities.push(...data));
