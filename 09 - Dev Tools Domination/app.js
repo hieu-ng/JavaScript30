@@ -32,5 +32,5 @@ console.group();
 console.groupCollapsed();
 console.groupEnd();
 // counting
-
+console.count();
 // timing
