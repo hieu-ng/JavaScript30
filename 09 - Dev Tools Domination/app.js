@@ -18,7 +18,7 @@ console.log("%c I am some text", "font-size:50px"); // Adding inline style
 // warning!
 console.warn("Fucking lol");
 // Error :|
-
+console.error("Fuck!");
 // Info
 
 // Testing
