@@ -34,3 +34,4 @@ console.groupEnd();
 // counting
 console.count();
 // timing
+console.time();
