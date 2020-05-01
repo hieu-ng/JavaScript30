@@ -20,7 +20,7 @@ console.warn("Fucking lol");
 // Error :|
 console.error("Fuck!");
 // Info
-
+console.info(`Fun fact something something`);
 // Testing
 
 // clearing
