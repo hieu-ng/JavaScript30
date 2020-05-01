@@ -14,7 +14,7 @@ function makeGreen() {
 // Interpolated
 console.log("Some arguments", "will be concatenated with this syntax"); // Backticks will also do the jobß∏
 // Styled
-
+console.log("%c I am some text", "font-size:50px"); // Adding inline style
 // warning!
 
 // Error :|
