@@ -28,7 +28,9 @@ console.clear();
 // Viewing DOM Elements
 console.dir();
 // Grouping together
-
+console.group();
+console.groupCollapsed();
+console.groupEnd();
 // counting
 
 // timing
