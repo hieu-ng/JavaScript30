@@ -24,7 +24,7 @@ console.info(`Fun fact something something`);
 // Testing
 console.assert(1 === 1, "That is wrong"); // Only active when something is wrong
 // clearing
-
+console.clear();
 // Viewing DOM Elements
 
 // Grouping together
