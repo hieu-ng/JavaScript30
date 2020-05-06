@@ -1,11 +1,12 @@
 // start with strings, numbers and booleans
 // Numbers are cloned
-// String are cloned
+// Strings are cloned
 // Let's say we have an array
 const players = ["Wes", "Sarah", "Ryan", "Poppy"];
 
 // and we want to make a copy of it.
-
+const team = players;
+// Arrays are referenced
 // You might think we can just do something like this:
 
 // however what happens when we update that array?
