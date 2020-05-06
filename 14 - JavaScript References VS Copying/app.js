@@ -1,5 +1,6 @@
 // start with strings, numbers and booleans
 // Numbers are cloned
+// String are cloned
 // Let's say we have an array
 const players = ["Wes", "Sarah", "Ryan", "Poppy"];
 
