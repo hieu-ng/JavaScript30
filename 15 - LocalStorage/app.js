@@ -1,10 +1,10 @@
-const addItems = document.querySelector(".add-items");
-const itemsList = document.querySelector(".plates");
+const addItems = document.querySelector('.add-items');
+const itemsList = document.querySelector('.plates');
 const items = [];
 
 function addItem(e) {
     e.preventDefault();
-    const text = this.querySelector("[name-item]").value;
+    const text = this.querySelector('[name-item]').value;
     const item = {
         text,
         done: false,
@@ -19,11 +19,13 @@ function populateList(plates = [], platesList) {
         .map((plate, i) => {
             return `
         <li>
-            <input type='checkbox' data-index=${i} id='item${i} checked='false'/>
+            <input type='checkbox' data-index=${i} id='item${i} checked='false' ${
+                plate.done ? 'checked' : ''
+            } />
             <label for="">${plate.text}</label>
         </li>
         `;
         })
-        .join("");
+        .join('');
 }
-addItems.addEventListener("submit", addItem);
+addItems.addEventListener('submit', addItem);
