@@ -29,6 +29,16 @@ function populateList(plates = [], platesList) {
         })
         .join('');
 }
+
+function toggleDone(e) {
+    if (!e.target.matches('input')) return; // Skip unless it is an input
+    const el = e.target;
+    const index = el.dataset.index;
+    items[index].done = !items[index].done; //Change the property
+    localStorage.setItem('items', JSON.stringify(items));
+    populateList(items, itemsList);
+}
 addItems.addEventListener('submit', addItem);
+addItems.addEventListener('click', toggleDone);
 
 populateList(items, itemsList);
