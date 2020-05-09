@@ -18,9 +18,11 @@ function stripArticle(bandName) {
 }
 
 const sortedBands = bands.sort(function (a, b) {
-    if (a > b) {
+    if (stripArticle(a) > stripArticle(b)) {
         return 1;
     } else {
         return -1;
     }
+    // Ternary operator with arrow function:
+    // bands.sort((a,b) => stripArticle(a) > stripArticle(n) ? 1; -1)
 });
