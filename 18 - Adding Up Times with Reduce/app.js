@@ -9,3 +9,7 @@ const seconds = timeNodes
     .reduce((total, seconds) => {
         return total + seconds;
     });
+
+let secondsLeft = seconds;
+const hours = Math.floor(secondsLeft / 3600);
+secondsLeft = secondsLeft % 3600;
