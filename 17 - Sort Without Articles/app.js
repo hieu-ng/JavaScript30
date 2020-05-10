@@ -26,3 +26,7 @@ const sortedBands = bands.sort(function (a, b) {
     // Ternary operator with arrow function:
     // bands.sort((a,b) => stripArticle(a) > stripArticle(n) ? 1; -1)
 });
+
+document.querySelector('#bands').innerHTML = sortedBands
+    .map((band) => `<li>${band}</li>`)
+    .join('');
