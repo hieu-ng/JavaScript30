@@ -31,3 +31,11 @@ function toggle(startOver = true) {
 
 speechSynthesis.addEventListener('voiceschanged', populateVoices);
 voicesDropdown.addEventListener('change', setVoice);
+
+function setOption() {
+    msg[this.name] = this.value;
+    toggle();
+}
+options.forEach((option) => {
+    option.addEventListener('change', setOption);
+});
