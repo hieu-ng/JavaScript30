@@ -39,3 +39,6 @@ function setOption() {
 options.forEach((option) => {
     option.addEventListener('change', setOption);
 });
+
+speakButton.addEventListener('click', toggle);
+stopButton.addEventListener('click', toggle.bind(null, false));
