@@ -20,6 +20,9 @@ function timer(seconds) {
 function displayTimeLeft(seconds) {
 	const minutes = Math.floor(seconds / 60);
 	const remainderSeconds = seconds % 60;
-	const display = `${minutes}:${remainderSeconds}`;
+	const display = `${minutes}:${
+		remainderSeconds < 10 ? '0' : ''
+	}${remainderSeconds}`;
+	document.title = display;
 	timerDisplay.textContent = display;
 }
