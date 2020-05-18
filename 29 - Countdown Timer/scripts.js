@@ -39,7 +39,10 @@ function displayEndTime(timestamp) {
 	}${minutes}`;
 }
 
-function startTimer() {}
+function startTimer() {
+	const seconds = parseInt(this.dataset.time);
+	timer(seconds);
+}
 buttons.forEach((button) => {
 	button.addEventListener('click', startTimer);
 });
