@@ -3,9 +3,10 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
-slider.addEventListener('mousedown', () => {
+slider.addEventListener('mousedown', (e) => {
 	isDown = true;
 	slider.classList.add('.active');
+	startX = e.pageX - slider.offsetLeft;
 });
 slider.addEventListener('mouseleave', () => {
 	idDown = false;
