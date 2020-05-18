@@ -5,10 +5,12 @@ const nav = document.querySelector('.top');
 function handleEnter(params) {
 	this.classList.add('trigger-enter');
 	setTimeout(() => this.classList.add('trigger-enter-active'), 150);
+	background.classList.add('open');
 }
 
 function handleLeave(params) {
 	this.classList.add('trigger-enter', 'trigger-enter-active');
+	background.classList.remove('open');
 }
 
 triggers.forEach((trigger) =>
