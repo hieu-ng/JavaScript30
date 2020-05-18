@@ -14,10 +14,16 @@ function handleEnter(params) {
 	const coords = {
 		height: drowpdownCoords.height,
 		width: drowpdownCoords.width,
+		top: drowpdownCoords.top,
+		left: drowpdownCoords.left,
 	};
 
 	background.style.setProperty('width', `{coords.width}px`);
 	background.style.setProperty('height', `{coords.height}px`);
+	background.style.setProperty(
+		'transform',
+		`translate(${coords.left}px, ${coords.top}px)`
+	);
 }
 
 function handleLeave(params) {
