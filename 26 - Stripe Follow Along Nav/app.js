@@ -6,6 +6,15 @@ function handleEnter(params) {
 	this.classList.add('trigger-enter');
 	setTimeout(() => this.classList.add('trigger-enter-active'), 150);
 	background.classList.add('open');
+
+	const dropdown = this.querySelector('.dropdown');
+	const drowpdownCoords = dropdown.getBoundingClientRect();
+	const navCoords = nav.getBoundingClientRect();
+
+	const coords = {
+		height: drowpdownCoords.height,
+		width: drowpdownCoords.width,
+	};
 }
 
 function handleLeave(params) {
