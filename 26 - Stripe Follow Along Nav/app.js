@@ -14,8 +14,8 @@ function handleEnter(params) {
 	const coords = {
 		height: drowpdownCoords.height,
 		width: drowpdownCoords.width,
-		top: drowpdownCoords.top,
-		left: drowpdownCoords.left,
+		top: drowpdownCoords.top - navCoords.top,
+		left: drowpdownCoords.left - navCoords.leff,
 	};
 
 	background.style.setProperty('width', `{coords.width}px`);
