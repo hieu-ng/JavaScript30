@@ -15,6 +15,9 @@ function handleEnter(params) {
 		height: drowpdownCoords.height,
 		width: drowpdownCoords.width,
 	};
+
+	background.style.setProperty('width', `{coords.width}px`);
+	background.style.setProperty('height', `{coords.height}px`);
 }
 
 function handleLeave(params) {
