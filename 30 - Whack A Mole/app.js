@@ -3,5 +3,10 @@ const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
 
 function randTime(min, max) {
-	return Math.random() * (max - min) + min;
+	return Math.round(Math.random() * (max - min) + min);
+}
+
+function randomeHole(holes) {
+	const idx = Math.floor(Math.random() * holes.length);
+	const hole = holes[idx];
 }
