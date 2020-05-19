@@ -24,5 +24,6 @@ function peep() {
 	hole.classList.add('up');
 	setTimeout(() => {
 		hole.classList.remove('up');
+		peep();
 	}, time);
 }
