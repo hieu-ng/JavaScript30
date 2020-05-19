@@ -11,8 +11,9 @@ function randomeHole(holes) {
 	const idx = Math.floor(Math.random() * holes.length);
 	const hole = holes[idx];
 	if (hole === lastHole) {
-		randomeHole(holes);
+		return randomeHole(holes);
 	}
 
 	lastHole = hole;
+	return hole;
 }
